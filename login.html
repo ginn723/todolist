@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&family=Noto+Sans+TC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/all.css" />
+  </head>
+  <style>
+    body {
+      font-family: "Baloo Thambi 2", cursive;
+      background: #ffd370;
+    }
+    .text-noto,
+    a {
+      font-family: "Noto Sans TC", sans-serif;
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col col-lg-6 col-12">
+          <h1 class="text-center d-lg-none">
+            <span class="position-relative">
+              <img class=" " src="./images/mark-border.png" alt="" />
+              <img
+                class="position-absolute"
+                style="margin-left: -2.2rem"
+                src="./images/mark.png"
+              />
+            </span>
+            ONLINE TODO LIST
+          </h1>
+          <div class="d-none d-lg-block">
+            <h1 class="text-center">
+              <span class="position-relative">
+                <img class="" src="./images/mark-border.png" alt="" />
+                <img
+                  class="position-absolute"
+                  src="./images/mark.png"
+                  style="margin-left: -2.2rem; margin-top: 0.3rem"
+                />
+              </span>
+              ONLINE TODO LIST
+              <img class="mt-3" src="./images/img.png" />
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-6 gy-lg-5">
+          <h2 class="text-noto text-center fs-4 mb-4">
+            最實用的線上代辦事項服務
+          </h2>
+
+          <form class="row g-3 needs-validation text-noto" novalidate>
+            <div class="col-12">
+              <label for="validationCustom01" class="form-label">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">此欄位不可為空</div>
+            </div>
+            <div class="col-12">
+              <label for="validationCustom02" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="validationCustom02"
+                value=""
+                required
+              />
+              <div class="invalid-feedback">此欄位不可為空</div>
+            </div>
+            <div class="col-12 text-center d-block">
+              <button class="btn btn-primary my-4 px-5" type="submit">
+                登入</button
+              ><br />
+              <a href="./signup.html">註冊帳號</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./all.js"></script>
+  </body>
+</html>

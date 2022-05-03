@@ -1,0 +1,18 @@
+@mixin mobile {
+  @media(max-width:568px) {
+    @content
+  }
+}
+
+.bg {
+  font-family: "Baloo Thambi 2", cursive;
+  background-image:url('../../images/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include mobile {
+    background: #ffd370;
+  }
+}
+
